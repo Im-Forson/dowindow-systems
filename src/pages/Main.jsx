@@ -179,31 +179,31 @@ export default function Main() {
                 <div className="flex md:hidden flex-row justify-between mt-2 ">
                     <button
                     onClick={() => {scrollToSection('home')}}
-                    className={`${navlinkPad} ${activeSection=='home' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[13px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
+                    className={`${activeSection=='home' ? 'border-[#1F1A38]' : 'border-[transparent]'} py-[10px] text-[13px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
                     >
                         Home
                     </button>
                     <button
                     onClick={() => {scrollToSection('about')}}
-                    className={`${navlinkPad} ${activeSection=='about' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[13px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
+                    className={`${activeSection=='about' ? 'border-[#1F1A38]' : 'border-[transparent]'} py-[10px] text-[13px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
                     >
                         About
                     </button>
                     <button
                     onClick={() => {scrollToSection('products')}}
-                    className={`${navlinkPad} ${activeSection=='products' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[13px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
+                    className={`${activeSection=='products' ? 'border-[#1F1A38]' : 'border-[transparent]'} py-[10px] text-[13px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
                     >
                         Products
                     </button>
                     <button
                     onClick={() => {scrollToSection('works')}}
-                    className={`${navlinkPad} ${activeSection=='works' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[13px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
+                    className={`${activeSection=='works' ? 'border-[#1F1A38]' : 'border-[transparent]'} py-[10px] text-[13px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
                     >
                         Works
                     </button>
                     <button
                     onClick={() => {scrollToSection('contact')}}
-                    className={`${navlinkPad} ${activeSection=='contact' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[13px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
+                    className={`${activeSection=='contact' ? 'border-[#1F1A38]' : 'border-[transparent]'} py-[10px] text-[13px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
                     >
                         Contact
                     </button>
@@ -214,14 +214,14 @@ export default function Main() {
                 <Slider/>
             </section>
             <section id="about" className="h-[auto] pt-[120px]">
-                <div className="flex">
-                    <div className="w-[50%] ">
+                <div className="flex flex-col md:flex-row">
+                    <div className="md:w-[50%] ">
                         <h1 className="section-header">About</h1>
                         <div className="h-[100%] flex justify-center items-center px-[50px] ">
                             <SliderAbout/>
                         </div>
                     </div>
-                    <div className="w-[50%] pr-[90px]">
+                    <div className="md:w-[50%] pr-[90px]">
                         <p className="about-text text-[17px] font mb-[20px]">
                             At doWindow Systems, we design, fabricate, and install premium aluminium and glass solutions that redefine modern living and working spaces. Based in Ghana, we are committed to delivering innovative, durable, and aesthetically pleasing window and door systems that meet both residential and commercial needs.
                         </p>

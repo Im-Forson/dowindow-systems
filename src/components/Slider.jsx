@@ -38,10 +38,10 @@ export default function Slider() {
           <SwiperSlide key={index}>
             <div
               className="w-full h-full bg-cover bg-center relative"
-              style={{ backgroundImage: `url(${slide.image})` }}
+              style={{ backgroundImage: `url(${slide.image})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}
             >
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/70 to-black/70 flex flex-col items-center justify-center text-center text-white">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-3 drop-shadow-lg">
+                    <h1 className="text-3xl md:text-6xl font-bold mb-3 drop-shadow-lg">
                     {slide.title}
                     </h1>
                     <p className="text-lg md:text-2xl">{slide.subtitle}</p>
