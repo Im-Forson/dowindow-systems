@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
 
-import DowindowLogo from "../assets/doWindow.png"
+import DowindowLogo from "../assets/dowindow.png"
 import SlidingProduct from "../assets/product-sliding-window.jpg";
 import ProjectedProduct from "../assets/product-projected-window.jpg";
 import CasementProduct from "../assets/product-casement-window.jpg";
