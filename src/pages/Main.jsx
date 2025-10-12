@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
 
-
+import DowindowLogo from "../assets/doWindow.png"
 import SlidingProduct from "../assets/product-sliding-window.jpg";
 import ProjectedProduct from "../assets/product-projected-window.jpg";
 import CasementProduct from "../assets/product-casement-window.jpg";
@@ -20,7 +20,7 @@ import WorkKasoa from "../assets/work-kasoa.jpg";
 import Logo from "../assets/logo.png"
 import Slider from "../components/Slider";
 
-import { Droplet, Sun, House, Phone, Mail, Timer, Facebook, Instagram, Linkedin, MessageCircle, FacebookIcon, InstagramIcon } from "lucide-react";
+import { Droplet, Sun, House, Phone, Mail, Timer, Menu, Linkedin, MessageCircle, FacebookIcon, InstagramIcon } from "lucide-react";
 import { ShieldCheck } from "lucide-react";
 import { Maximize2 } from "lucide-react";
 import { Wind } from "lucide-react";
@@ -129,48 +129,85 @@ export default function Main() {
 
     return (
         <>
-            <nav className={`fixed top-0 left-0 w-full bg-white shadow z-50 flex justify-between items-center px-[30px] pt-[10px] pb-[15px]`}>
-                <div className="flex flex-col items-center">
-                    <p className="text-lg text-[#1F1A38] font-bold py-[0px] ">DoWindow<span className="text-[12px] text-[brown] font-bold ml-[2px] ">Systems</span></p>
+            <nav className={`fixed top-0 left-0 w-full bg-white shadow z-50  px-[30px] pt-[10px] pb-[15px]`}>
+                <div className="flex justify-between items-center">
+                    <div className="flex flex-col items-center">
+                        <div className="flex flex-row items-center md:gap-[5px] gap-[3px]">
+                            <img src={DowindowLogo} alt="" className="md:w-[30px] md:h-[30px] w-[20px] h-[20px]" />
+                            <p className="md:text-lg text-[13px] text-[#1F1A38] font-bold py-[0px] ">DoWindow<span className="text-[brown] font-bold ml-[2px] ">Systems</span></p>
+                        </div>
+                    </div>
+                    <div className="gap-10 hidden md:flex">
+                        <button
+                        onClick={() => {scrollToSection('home')}}
+                        className={`${navlinkPad} ${activeSection=='home' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[16px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
+                        >
+                            Home
+                        </button>
+                        <button
+                        onClick={() => {scrollToSection('about')}}
+                        className={`${navlinkPad} ${activeSection=='about' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[18px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
+                        >
+                            About
+                        </button>
+                        <button
+                        onClick={() => {scrollToSection('products')}}
+                        className={`${navlinkPad} ${activeSection=='products' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[18px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
+                        >
+                            Products
+                        </button>
+                        <button
+                        onClick={() => {scrollToSection('works')}}
+                        className={`${navlinkPad} ${activeSection=='works' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[18px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
+                        >
+                            Works
+                        </button>
+                        <button
+                        onClick={() => {scrollToSection('contact')}}
+                        className={`${navlinkPad} ${activeSection=='contact' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[18px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
+                        >
+                            Contact
+                        </button>
+                    </div>
+                    <Link
+                    to="/quote"
+                    className="fadePulse px-2 py-2 md:px-3 md:py-3 rounded-[2px] text-white text-[12px] md:text-[16px] hover:opacity-80"
+                    >
+                    Get a Quote
+                    </Link>
                 </div>
-                <div className="flex gap-10">
+                <div className="flex md:hidden flex-row justify-between mt-2 ">
                     <button
-                     onClick={() => {scrollToSection('home')}}
-                     className={`${navlinkPad} ${activeSection=='home' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[16px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
+                    onClick={() => {scrollToSection('home')}}
+                    className={`${navlinkPad} ${activeSection=='home' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[13px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
                     >
                         Home
                     </button>
                     <button
-                     onClick={() => {scrollToSection('about')}}
-                     className={`${navlinkPad} ${activeSection=='about' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[18px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
+                    onClick={() => {scrollToSection('about')}}
+                    className={`${navlinkPad} ${activeSection=='about' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[13px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
                     >
                         About
                     </button>
                     <button
-                     onClick={() => {scrollToSection('products')}}
-                     className={`${navlinkPad} ${activeSection=='products' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[18px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
+                    onClick={() => {scrollToSection('products')}}
+                    className={`${navlinkPad} ${activeSection=='products' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[13px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
                     >
                         Products
                     </button>
                     <button
-                     onClick={() => {scrollToSection('works')}}
-                     className={`${navlinkPad} ${activeSection=='works' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[18px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
+                    onClick={() => {scrollToSection('works')}}
+                    className={`${navlinkPad} ${activeSection=='works' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[13px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
                     >
                         Works
                     </button>
                     <button
-                     onClick={() => {scrollToSection('contact')}}
-                     className={`${navlinkPad} ${activeSection=='contact' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[18px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
+                    onClick={() => {scrollToSection('contact')}}
+                    className={`${navlinkPad} ${activeSection=='contact' ? 'border-[#1F1A38]' : 'border-[transparent]'} text-[13px] cursor-pointer border-b-[2px]  hover:text-[rgba(0,0,0,0.8)]`}
                     >
                         Contact
                     </button>
                 </div>
-                <Link
-                 to="/quote"
-                 className="fadePulse px-3 py-3 rounded-[2px] text-white text-[16px] hover:opacity-80"
-                >
-                Get a Quote
-                </Link>
             </nav>
             {/* <div className={`${navHeight}`}></div> */}
             <section id="home" className="pt-[100px] h-[auto]">
@@ -390,7 +427,10 @@ export default function Main() {
             <footer className="h-[auto] pt-[30px] bg-[#f2f2f2]">
                 <div className="flex flex-row justify-around pb-[80px]">
                     <div className="w-[20%]">
-                        <p className="text-[30px] text-[#1F1A38] font-bold py-[0px] mb-4 ">doWindow<span className="text-[22px] text-[brown] font-bold ml-[5px] ">Systems</span></p>
+                        <div className="flex flex-row gap-2 items-center mb-4">
+                            <img src={DowindowLogo} alt="" className="w-[30px] h-[30px]" />
+                            <p className="text-[30px] text-[#1F1A38] font-bold py-[0px] ">doWindow<span className="text-[22px] text-[brown] font-bold ml-[5px] ">Systems</span></p>
+                        </div>
                         <p className="mb-2 text-[16px] text-[rgba(0,0,0,0.8)] ">We are recognized for our expertise in window and door installations throughout Ghana, we take pride in delivering projects promptly and cost-effectively.</p>
                         <p className="text-[16px] font-semibold text-[rgba(0,0,0,0.8)]">Core Values:</p>
                         <p className="mb-2 text-[16px] text-[rgba(0,0,0,0.8)]"><span className="text-[16px] font-semibold">– Quality</span></p>
