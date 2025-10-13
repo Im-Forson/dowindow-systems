@@ -171,7 +171,7 @@ export default function Main() {
                     </div>
                     <Link
                     to="/quote"
-                    className="fadePulse px-2 py-2 md:px-3 md:py-3 rounded-[2px] text-white text-[12px] md:text-[16px] hover:opacity-80"
+                    className="fadePulse px-3 py-2 md:py-3 rounded-[2px] text-white text-[12px] font-bold md:text-[16px] hover:opacity-80"
                     >
                     Get a Quote
                     </Link>
@@ -386,30 +386,30 @@ export default function Main() {
                         <form action="" className="w-full px-10 md:px-0 ">
                            <div className="flex flex-col md:flex-row w-full gap-5 mb-[20px] ">
                                 <input 
-                                    className="md:w-[31%] h-[50px] px-[5px] border-1 border-[rgba(0,0,0,0.2)] rounded-[2px] text-[13px] md:text-[16px] focus:ring-1 focus:ring-[#2D3047] outline-none"
+                                    className="md:w-[31%] h-[40px] md:h-[50px] px-[5px] border-1 border-[rgba(0,0,0,0.5)] rounded-[2px] text-[13px] md:text-[16px] focus:ring-1 focus:ring-[#2D3047] outline-none"
                                     type="text"
                                     placeholder="First name"
                                 />
                                 <input 
-                                    className="md:w-[31%] h-[50px] px-[5px] border-1 border-[rgba(0,0,0,0.2)] rounded-[2px] text-[13px] md:text-[16px] focus:ring-1 focus:ring-[#2D3047] outline-none"
+                                    className="md:w-[31%] h-[40px] md:h-[50px] px-[5px] border-1 border-[rgba(0,0,0,0.5)] rounded-[2px] text-[13px] md:text-[16px] focus:ring-1 focus:ring-[#2D3047] outline-none"
                                     type="text"
                                     placeholder="Last name"
                                 />
                            </div>
                            <input 
-                                className="md:w-[65%] w-full h-[50px] px-[5px] border-1 border-[rgba(0,0,0,0.2)] rounded-[2px] mb-[20px] text-[13px] md:text-[16px] focus:ring-1 focus:ring-[#2D3047] outline-none"
+                                className="md:w-[65%] w-full h-[40px] md:h-[50px] px-[5px] border-1 border-[rgba(0,0,0,0.5)] rounded-[2px] mb-[20px] text-[13px] md:text-[16px] focus:ring-1 focus:ring-[#2D3047] outline-none"
                                 type="email"
                                 placeholder="Email"
                             />
                             <div className="">
                                 <textarea 
-                                    className="md:w-[65%] w-full h-[250px] px-[5px] py-[10px] border-1 border-[rgba(0,0,0,0.2)] text-[13px] md:text-[16px] rounded-[2px] mb-[20px] focus:ring-1 focus:ring-[#2D3047] outline-none"
+                                    className="md:w-[65%] w-full h-[40px] md:h-[250px] px-[5px] py-[10px] border-1 border-[rgba(0,0,0,0.5)] text-[13px] md:text-[16px] rounded-[2px] mb-[20px] focus:ring-1 focus:ring-[#2D3047] outline-none"
                                     name="" id="" rows="10"
                                     placeholder="Your message"
                                 />
                             </div>
                             <div className="flex md:w-[65%] w-full justify-end mb-[20px] ">
-                                <button type="submit" className="w-[35%] md:w-[50%] h-[50px] md:h-[60px] flex items-center justify-center bg-[#2D3047] text-white text-[14px] md:text-[16px] rounded-[2px] hover:opacity-[0.7]">Send Message</button>
+                                <button type="submit" className="w-[50%] h-[50px] md:h-[60px] flex items-center justify-center bg-[#2D3047] text-white text-[14px] md:text-[16px] font-bold rounded-[2px] hover:opacity-[0.7]">Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -498,7 +498,7 @@ export default function Main() {
                             <Timer className="w-3 h-3 md:w-4 md:h-4"/>
                             <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)]">Sat: 9:00 am - 1.00 pm</p>
                         </div>
-                        <button className="flex justify-center items-center w-[25%] h-[40px] md:w-[60%] md:h-[50px] border-1 bg-[brown] text-white text-[14px] md:text-[16px] hover:opacity-[0.7] ">
+                        <button className="flex justify-center items-center w-[35%] h-[40px] md:w-[60%] md:h-[50px] border-1 bg-[brown] text-white text-[14px] md:text-[16px] font-bold hover:opacity-[0.7] ">
                             Call Us
                         </button>
                     </div>

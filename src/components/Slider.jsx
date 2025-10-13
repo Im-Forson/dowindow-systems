@@ -4,6 +4,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import DoWindowIcon from "../assets/image-1.jpg"
 import Image2 from "../assets/image-2.jpg"
 import Image3 from "../assets/work-me-2.jpg"
+import WorkPramPram from "../assets/work-prampram-1.jpg";
 
 export default function Slider() {
   const slides = [
@@ -41,10 +42,10 @@ export default function Slider() {
               style={{ backgroundImage: `url(${slide.image})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}
             >
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/70 to-black/70 flex flex-col items-center justify-center text-center text-white">
-                    <h1 className="text-3xl md:text-6xl font-bold mb-3 drop-shadow-lg">
+                    <h1 className="text-3xl md:text-6xl font-bold mb-3 drop-shadow-lg px-[20px]">
                     {slide.title}
                     </h1>
-                    <p className="text-lg md:text-2xl">{slide.subtitle}</p>
+                    <p className="text-lg md:text-2xl px-[20px]">{slide.subtitle}</p>
                 </div>
             </div>
           </SwiperSlide>

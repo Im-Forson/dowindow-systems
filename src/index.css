@@ -3,6 +3,8 @@
 @import 'swiper/css';
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
+@import 'react-phone-input-2/lib/style.css';
+
 
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -70,6 +72,11 @@ body {
   font-family: var(--font-bbh);
   color: #595959;
   padding-left: 50px;
+}
+
+.quote-header {
+  font-family: var(--font-bbh);
+  color: #595959;
 }
 
 .about-slide-text {
