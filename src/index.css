@@ -55,7 +55,7 @@ body {
 }
 
 .product-description {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .product-strength-icon {
@@ -63,24 +63,22 @@ body {
 }
 
 .product-strength-text {
-  color: black;
+  color: #2D3047;
 }
 
 .section-header {
   font-family: var(--font-bbh);
   color: #595959;
-  font-size: 35px;
   padding-left: 50px;
 }
 
 .about-slide-text {
   font-family: var(--font-source-code-pro);
-  height: 140px;
   /* background-color: yellow; */
 }
 
 .about-text {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @keyframes fadeIn {

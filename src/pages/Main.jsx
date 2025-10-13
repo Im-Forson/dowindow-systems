@@ -20,7 +20,7 @@ import WorkKasoa from "../assets/work-kasoa.jpg";
 import Logo from "../assets/logo.png"
 import Slider from "../components/Slider";
 
-import { Droplet, Sun, House, Phone, Mail, Timer, Menu, Linkedin, MessageCircle, FacebookIcon, InstagramIcon } from "lucide-react";
+import { Droplet, Sun, House, Phone, Mail, Timer, Locate, Linkedin, MessageCircle, FacebookIcon, InstagramIcon, Map, Navigation2 } from "lucide-react";
 import { ShieldCheck } from "lucide-react";
 import { Maximize2 } from "lucide-react";
 import { Wind } from "lucide-react";
@@ -209,42 +209,41 @@ export default function Main() {
                     </button>
                 </div>
             </nav>
-            {/* <div className={`${navHeight}`}></div> */}
             <section id="home" className="pt-[100px] h-[auto]">
                 <Slider/>
             </section>
             <section id="about" className="h-[auto] pt-[120px]">
                 <div className="flex flex-col md:flex-row">
                     <div className="md:w-[50%] ">
-                        <h1 className="section-header">About</h1>
+                        <h1 className="section-header text-[20px] md:text-[35px]">About Us</h1>
                         <div className="h-[100%] flex justify-center items-center px-[50px] ">
                             <SliderAbout/>
                         </div>
                     </div>
-                    <div className="md:w-[50%] pr-[90px]">
-                        <p className="about-text text-[17px] font mb-[20px]">
-                            At doWindow Systems, we design, fabricate, and install premium aluminium and glass solutions that redefine modern living and working spaces. Based in Ghana, we are committed to delivering innovative, durable, and aesthetically pleasing window and door systems that meet both residential and commercial needs.
+                    <div className="md:w-[50%] md:pr-[90px] px-[50px]">
+                        <p className="about-text text-[13px] md:text-[17px] font mb-[20px]">
+                            At <span className="font-bold">doWindow Systems,</span> we <span className="font-bold">fabricate,</span>, and <span className="font-bold">install</span> premium <span className="font-bold">aluminium</span> and <span className="font-bold">glass solutions</span> that redefine modern living and working spaces. Based in <span className="font-bold">Ghana</span>, we are committed to delivering innovative, durable, and aesthetically pleasing <span className="font-bold">window and door systems</span> that meet both residential and commercial needs.
                         </p>
-                        <p className="about-text text-[17px] font mb-[20px]">
-                            We specialize in a wide range of products, including sliding windows and doors, projected windows, casement windows, fixed windows, aluminium hinge doors, swing doors, frameless glass doors, and sleek shower cubicles. Every product we create is tailored to ensure optimal performance, long-lasting strength, and elegant design — all while maintaining affordability and precision.
+                        <p className="about-text text-[13px] md:text-[17px] font mb-[20px]">
+                            We specialize in a wide range of products, including <span className="font-bold">sliding windows and doors, projected windows, casement windows, fixed windows, aluminium hinge doors, swing doors, frameless glass doors,</span> and sleek <span className="font-bold">shower cubicles</span>. Every product we create is tailored to ensure optimal performance, <span className="font-bold">long-lasting strength,</span> and elegant design — all while maintaining affordability and precision.
                         </p>
-                        <p className="about-text text-[17px] font">
-                            We are a young and passionate team, driven by innovation and a commitment to excellence. Each installation is handled with care and attention to detail, ensuring that our clients receive products that last, perform, and inspire confidence.
+                        <p className="about-text text-[13px] md:text-[17px] font">
+                            We are a <span className="font-bold">young and passionate team,</span> driven by innovation and a commitment to excellence. Each installation is handled with care and attention to detail, ensuring that <span className="font-bold">our clients receive products that last, perform, and inspire confidence.</span>
                         </p>
                     </div>
                 </div>
             </section>
 
             <section id="products" className="h-[auto] pt-[120px]">
-                <h1 className="section-header mb-[25px]">Products</h1>
+                <h1 className="section-header text-[20px] md:text-[35px] mb-[25px]">Products</h1>
                 <div className="px-[20px]">
-                    <div className="product-card flex items-center w-[100%]  border-[0px] border-[rgba(0,0,0,0.03)] rounded-[5px] px-[10px] py-[20px] mb-[30px] ">
-                        <div className="w-[20%] h-[auto] flex flex-col items-center justifty-center gap-3 ">
-                            <img src={SlidingProduct} alt="" className="h-[110px] w-[100px]" />
-                            <p className="product-title text-[17px] text-[#1E2019] font-bold ">Sliding Window & Door</p>
+                    <div className="product-card flex flex-col md:flex-row items-center w-[100%]  border-[0px] border-[rgba(0,0,0,0.03)] rounded-[5px] px-[10px] py-[20px] mb-[30px] ">
+                        <div className="md:w-[20%] h-[auto] flex md:flex-col items-center gap-2 md:items-center md:justifty-center md:gap-3 mb-5 md:mb-0 ">
+                            <img src={SlidingProduct} alt="" className="h-[60px] w-[50px] md:h-[110px] md:w-[100px]" />
+                            <p className="product-title text-[16px] md:text-[17px] text-[#1E2019] font-bold ">Sliding Window & Door</p>
                         </div>
-                        <div className="w-[70%] h-[auto] px-[50px] ">
-                            <p className="product-description text-[14px] text-center mb-[20px]">Designed to maximize natural light and airflow, our Sliding Window Systems bring comfort, elegance, and practicality together in one design. They are perfect for both residential and commercial buildings, giving your space a clean, modern aesthetic while improving energy efficiency and ventilation.</p>
+                        <div className="md:w-[70%] md:px-[50px] ">
+                            <p className="md:text-[14px] text-[13px] text-center mb-[20px]">Designed to maximize natural light and airflow, our Sliding Window Systems bring comfort, elegance, and practicality together in one design. They are perfect for both residential and commercial buildings, giving your space a clean, modern aesthetic while improving energy efficiency and ventilation.</p>
                             <div className="flex justify-center gap-5">
                                 <div className="flex items-center gap-3">
                                     <Sun className="product-strength-icon w-6 h-6 text-[gray]" />
@@ -261,13 +260,13 @@ export default function Main() {
                             </div>
                         </div>
                     </div>
-                    <div className="product-card flex items-center w-[100%] border-[0px] border-[rgba(0,0,0,0.03)] rounded-[5px] px-[10px] py-[20px] mb-[30px] ">
-                        <div className="w-[20%] h-[auto] flex flex-col items-center justifty-center gap-3 ">
-                            <img src={ProjectedProduct} alt="" className="h-[110px] w-[100px]" />
-                            <p className="text-[17px] text-[#1E2019] font-bold ">Projected Window</p>
+                    <div className="product-card flex flex-col md:flex-row items-center w-[100%]  border-[0px] border-[rgba(0,0,0,0.03)] rounded-[5px] px-[10px] py-[20px] mb-[30px] ">
+                        <div className="md:w-[20%] h-[auto] flex md:flex-col items-center gap-2 md:items-center md:justifty-center md:gap-3 mb-5 md:mb-0 ">
+                            <img src={ProjectedProduct} alt="" className="h-[60px] w-[50px] md:h-[110px] md:w-[100px]" />
+                            <p className="product-title text-[16px] md:text-[17px] text-[#1E2019] font-bold ">Projected Window</p>
                         </div>
-                        <div className="w-[70%] h-[auto] px-[50px] ">
-                            <p className="product-description text-[14px] text-center mb-[20px]">Bring sophistication and ventilation control to your space with our Projected Window Systems, expertly engineered for durability and elegance. Designed to open outward from the bottom or top, projected windows allow maximum airflow even during light rain, while maintaining a sleek and modern look that enhances any building façade.</p>
+                        <div className="md:w-[70%] md:px-[50px] ">
+                            <p className="md:text-[14px] text-[13px] text-center mb-[20px]">Bring sophistication and ventilation control to your space with our Projected Window Systems, expertly engineered for durability and elegance. Designed to open outward from the bottom or top, projected windows allow maximum airflow even during light rain, while maintaining a sleek and modern look that enhances any building façade.</p>
                             <div className="flex justify-center gap-5">
                                 <div className="flex items-center gap-3">
                                     <Wind className="product-strength-icon w-6 h-6 text-[gray]" />
@@ -284,13 +283,13 @@ export default function Main() {
                             </div>
                         </div>
                     </div>
-                    <div className="product-card flex items-center w-[100%] border-[0px] border-[rgba(0,0,0,0.03)] rounded-[5px] px-[10px] py-[20px] mb-[30px] ">
-                        <div className="w-[20%] h-[auto] flex flex-col items-center justifty-center gap-3 ">
-                            <img src={CasementProduct} alt="" className="h-[160px] w-[100px]" />
-                            <p className="text-[17px] text-[#1E2019] font-bold ">Casement Window</p>
+                    <div className="product-card flex flex-col md:flex-row items-center w-[100%]  border-[0px] border-[rgba(0,0,0,0.03)] rounded-[5px] px-[10px] py-[20px] mb-[30px] ">
+                        <div className="md:w-[20%] h-[auto] flex md:flex-col items-center gap-2 md:items-center md:justifty-center md:gap-3 mb-5 md:mb-0 ">
+                            <img src={CasementProduct} alt="" className="h-[60px] w-[50px] md:h-[110px] md:w-[100px]" />
+                            <p className="product-title text-[16px] md:text-[17px] text-[#1E2019] font-bold ">Casement Window</p>
                         </div>
-                        <div className="w-[70%] h-[auto] px-[50px] ">
-                            <p className="product-description text-[14px] text-center mb-[20px]">Classic in design yet modern in performance, doWindow Systems’ Casement Window offers timeless style with unmatched ventilation and ease of use. Hinged on the side and opening outward like a door, casement windows provide maximum airflow, clear views, and superior energy efficiency — making them a preferred choice for both residential and commercial projects.</p>
+                        <div className="md:w-[70%] md:px-[50px] ">
+                            <p className="md:text-[14px] text-[13px] text-center mb-[20px]">Classic in design yet modern in performance, doWindow Systems’ Casement Window offers timeless style with unmatched ventilation and ease of use. Hinged on the side and opening outward like a door, casement windows provide maximum airflow, clear views, and superior energy efficiency — making them a preferred choice for both residential and commercial projects.</p>
                             <div className="flex justify-center gap-5">
                                 <div className="flex items-center gap-3">
                                     <Wind className="product-strength-icon w-6 h-6 text-[gray]" />
@@ -307,13 +306,13 @@ export default function Main() {
                             </div>
                         </div>
                     </div>
-                    <div className="product-card flex items-center w-[100%] border-[0px] border-[rgba(0,0,0,0.03)] rounded-[5px] px-[10px] py-[20px] mb-[30px] ">
-                        <div className="w-[20%] h-[auto] flex flex-col items-center justifty-center gap-3 ">
-                            <img src={FixedProduct} alt=""className="h-[150px] w-[100px]" />
-                            <p className="text-[17px] text-[#1E2019] font-bold ">Fixed Window</p>
+                    <div className="product-card flex flex-col md:flex-row items-center w-[100%]  border-[0px] border-[rgba(0,0,0,0.03)] rounded-[5px] px-[10px] py-[20px] mb-[30px] ">
+                        <div className="md:w-[20%] h-[auto] flex md:flex-col items-center gap-2 md:items-center md:justifty-center md:gap-3 mb-5 md:mb-0 ">
+                            <img src={FixedProduct} alt=""className="h-[60px] w-[50px] md:h-[110px] md:w-[100px]" />
+                            <p className="product-title text-[16px] md:text-[17px] text-[#1E2019] font-bold ">Fixed Window</p>
                         </div>
-                        <div className="w-[70%] h-[auto] px-[50px] ">
-                            <p className="product-description text-[14px] text-center mb-[20px]">Simple, elegant, and built for clarity — our Fixed Window Systems are designed to frame beautiful outdoor views while allowing abundant natural light into your space. Fixed windows (also called picture windows) do not open, making them ideal for areas where ventilation isn’t required but visibility and aesthetics are key.</p>
+                        <div className="md:w-[70%] md:px-[50px] ">
+                            <p className="md:text-[14px] text-[13px] text-center mb-[20px]">Simple, elegant, and built for clarity — our Fixed Window Systems are designed to frame beautiful outdoor views while allowing abundant natural light into your space. Fixed windows (also called picture windows) do not open, making them ideal for areas where ventilation isn’t required but visibility and aesthetics are key.</p>
                             <div className="flex justify-center gap-5">
                                 <div className="flex items-center gap-3">
                                     <Sun className="product-strength-icon w-6 h-6 text-[gray]" />
@@ -330,13 +329,13 @@ export default function Main() {
                             </div>
                         </div>
                     </div>
-                    <div className="product-card flex items-center w-[100%] border-[0px] border-[rgba(0,0,0,0.03)] rounded-[5px] px-[10px] py-[20px] mb-[0px] ">
-                        <div className="w-[20%] h-[auto] flex flex-col items-center justifty-center gap-3 ">
-                            <img src={ShowerProduct} alt="" className="h-[150px] w-[100px]"/>
-                            <p className="text-[17px] text-[#1E2019] font-bold ">Shower Cubicle</p>
+                    <div className="product-card flex flex-col md:flex-row items-center w-[100%]  border-[0px] border-[rgba(0,0,0,0.03)] rounded-[5px] px-[10px] py-[20px] ">
+                        <div className="md:w-[20%] h-[auto] flex md:flex-col items-center gap-2 md:items-center md:justifty-center md:gap-3 mb-5 md:mb-0 ">
+                            <img src={ShowerProduct} alt="" className="h-[60px] w-[50px] md:h-[110px] md:w-[100px]"/>
+                            <p className="product-title text-[16px] md:text-[17px] text-[#1E2019] font-bold ">Shower Cubicle</p>
                         </div>
-                        <div className="w-[70%] h-[auto] px-[50px] ">
-                            <p className="product-description text-[14px] text-center mb-[20px]">Experience elegance and modern luxury with our Frameless Glass Shower Cubicle, crafted from high-quality tempered glass for unmatched strength and safety. Whether you prefer a sliding, hinged, or corner configuration, our shower cubicles are tailored to fit seamlessly into your bathroom layout.</p>
+                        <div className="md:w-[70%] md:px-[50px] ">
+                            <p className="md:text-[14px] text-[13px] text-center mb-[20px]">Experience elegance and modern luxury with our Frameless Glass Shower Cubicle, crafted from high-quality tempered glass for unmatched strength and safety. Whether you prefer a sliding, hinged, or corner configuration, our shower cubicles are tailored to fit seamlessly into your bathroom layout.</p>
                             <div className="flex justify-center gap-5">
                                 <div className="flex items-center gap-3">
                                     <ShieldCheck className="product-strength-icon w-6 h-6 text-[gray]" />
@@ -357,7 +356,7 @@ export default function Main() {
             </section>
 
             <section id="works" className="h-[auto] pt-[120px]">
-                <h1 className="section-header mb-[25px]">Works</h1>
+                <h1 className="section-header text-[20px] md:text-[35px] mb-[25px]">Works</h1>
                 <div className="max-w-6xl mx-auto px-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {works.map((work) => (
@@ -381,42 +380,56 @@ export default function Main() {
             </section>
 
             <section id="contact" className="h-[auto] pt-[120px] mb-[120px]">
-                <h1 className="section-header mb-[25px]">Contact Us</h1>
-                <div className="flex">
-                    <div className="w-[65%] pl-[70px]">
-                        <form action="" className="w-full ">
-                           <div className="flex w-full gap-5 mb-[20px] ">
+                <h1 className="section-header text-[20px] md:text-[35px] mb-[25px]">Contact Us</h1>
+                <div className="flex flex-col md:flex-row">
+                    <div className="md:w-[65%] md:pl-[70px] mb-3 md:mb-0">
+                        <form action="" className="w-full px-10 md:px-0 ">
+                           <div className="flex flex-col md:flex-row w-full gap-5 mb-[20px] ">
                                 <input 
-                                    className="w-[31%] h-[50px] px-[5px] border-1 border-[rgba(0,0,0,0.2)] rounded-[2px] text-[16px] focus:ring-1 focus:ring-[#2D3047] outline-none"
+                                    className="md:w-[31%] h-[50px] px-[5px] border-1 border-[rgba(0,0,0,0.2)] rounded-[2px] text-[13px] md:text-[16px] focus:ring-1 focus:ring-[#2D3047] outline-none"
                                     type="text"
                                     placeholder="First name"
                                 />
                                 <input 
-                                    className="w-[31%] h-[50px] px-[5px] border-1 border-[rgba(0,0,0,0.2)] rounded-[2px] text-[16px] focus:ring-1 focus:ring-[#2D3047] outline-none"
+                                    className="md:w-[31%] h-[50px] px-[5px] border-1 border-[rgba(0,0,0,0.2)] rounded-[2px] text-[13px] md:text-[16px] focus:ring-1 focus:ring-[#2D3047] outline-none"
                                     type="text"
                                     placeholder="Last name"
                                 />
                            </div>
                            <input 
-                                className="w-[65%] h-[50px] px-[5px] border-1 border-[rgba(0,0,0,0.2)] rounded-[2px] mb-[20px] text-[16px] focus:ring-1 focus:ring-[#2D3047] outline-none"
+                                className="md:w-[65%] w-full h-[50px] px-[5px] border-1 border-[rgba(0,0,0,0.2)] rounded-[2px] mb-[20px] text-[13px] md:text-[16px] focus:ring-1 focus:ring-[#2D3047] outline-none"
                                 type="email"
                                 placeholder="Email"
                             />
-                            <div>
+                            <div className="">
                                 <textarea 
-                                    className="w-[65%] h-[250px] px-[5px] py-[10px] border-1 border-[rgba(0,0,0,0.2)] text-[16px] rounded-[2px] mb-[20px] focus:ring-1 focus:ring-[#2D3047] outline-none"
+                                    className="md:w-[65%] w-full h-[250px] px-[5px] py-[10px] border-1 border-[rgba(0,0,0,0.2)] text-[13px] md:text-[16px] rounded-[2px] mb-[20px] focus:ring-1 focus:ring-[#2D3047] outline-none"
                                     name="" id="" rows="10"
                                     placeholder="Your message"
                                 />
                             </div>
-                            <div className="flex w-[65%] justify-end mb-[20px] ">
-                                <button type="submit" className="w-[50%] h-[60px] flex items-center justify-center bg-[#2D3047] text-white text-[16px] rounded-[2px] hover:opacity-[0.7]">Send Message</button>
+                            <div className="flex md:w-[65%] w-full justify-end mb-[20px] ">
+                                <button type="submit" className="w-[35%] md:w-[50%] h-[50px] md:h-[60px] flex items-center justify-center bg-[#2D3047] text-white text-[14px] md:text-[16px] rounded-[2px] hover:opacity-[0.7]">Send Message</button>
                             </div>
                         </form>
                     </div>
-                    <div className="w-[35%] pr-[70px] flex flex-col gap-5">
-                        <h1 className="text-3xl">Need more information on details? Call Us <span className="text-[brown]">+233 244 229 958</span></h1>
-                        <p className="text-[16px] italic">
+                    <div className="md:w-[35%] w-full px-[50px] md:pr-[70px] flex flex-col gap-6">
+                        <h1 className="md:text-3xl text-lg">Need more information on details? Call Us <span className="text-[brown]">+233 244 229 958</span></h1>
+                        <div className="">
+                            <div className="flex flex-row items-center gap-3 mb-2 ">
+                                <House className="w-3 h-3 md:w-4 md:h-4"/>
+                                <p className="text-[13px] md:text-[16px]">Amoanda, Central Region, Ghana</p>
+                            </div>
+                            <div className="flex flex-row items-center gap-3 mb-2 ">
+                                <Navigation2 className="w-3 h-3 md:w-4 md:h-4"/>
+                                <p className="text-[13px] md:text-[16px]">GC-017-7312</p>
+                            </div>
+                            <div className="flex flex-row items-center gap-3">
+                                <Mail className="w-3 h-3 md:w-4 md:h-4"/>
+                                <p className="text-[13px] md:text-[16px]">info@dowindowsystems.com</p>
+                            </div>
+                        </div>
+                        <p className="md:text-[16px] text-[13px] italic">
                             Our team is <span className="text-[brown] font-semibold">always ready</span> to guide you through the 
                             <span className="text-[brown] font-semibold"> best window and door solutions</span> perfectly tailored for 
                             <span> your home, office, or project needs.</span>
@@ -425,74 +438,74 @@ export default function Main() {
                 </div>
             </section>
             <footer className="h-[auto] pt-[30px] bg-[#f2f2f2]">
-                <div className="flex flex-row justify-around pb-[80px]">
-                    <div className="w-[20%]">
-                        <div className="flex flex-row gap-2 items-center mb-4">
-                            <img src={DowindowLogo} alt="" className="w-[30px] h-[30px]" />
-                            <p className="text-[30px] text-[#1F1A38] font-bold py-[0px] ">doWindow<span className="text-[22px] text-[brown] font-bold ml-[5px] ">Systems</span></p>
+                <div className="flex flex-col md:flex-row md:justify-around gap-8 md:gap-0 md:pb-[80px] pb-[50px]">
+                    <div className="md:w-[20%] flex flex-col items-center md:items-start">
+                        <div className="flex flex-row gap-2 items-center mb-2 md:mb-4">
+                            <img src={DowindowLogo} alt="" className="w-[22px] h-[22px] md:w-[30px] md:h-[30px]" />
+                            <p className="text-[16px] md:text-[30px] text-[#1F1A38] font-bold py-[0px] ">DoWindow<span className="text-[brown] font-bold ml-[5px] ">Systems</span></p>
                         </div>
-                        <p className="mb-2 text-[16px] text-[rgba(0,0,0,0.8)] ">We are recognized for our expertise in window and door installations throughout Ghana, we take pride in delivering projects promptly and cost-effectively.</p>
-                        <p className="text-[16px] font-semibold text-[rgba(0,0,0,0.8)]">Core Values:</p>
-                        <p className="mb-2 text-[16px] text-[rgba(0,0,0,0.8)]"><span className="text-[16px] font-semibold">– Quality</span></p>
-                        <p className="mb-2 text-[16px] text-[rgba(0,0,0,0.8)]"><span className="text-[16px] font-semibold">– Workmanship</span> </p>
-                        <p className="text-[16px] text-[rgba(0,0,0,0.8)]"><span className="text-[16px] font-semibold">– Friendly</span></p>
+                        <p className="mb-2 text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)] text-center md:text-left px-8 md:px-0 ">We are recognized for our expertise in window and door installations throughout Ghana, we take pride in delivering projects promptly and cost-effectively.</p>
+                        <p className="text-[13px] md:text-[16px] font-semibold text-[rgba(0,0,0,0.8)] font-semibold">Core Values:</p>
+                        <p className="mb-2 text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)] font-semibold">- Quality</p>
+                        <p className="mb-2 text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)] font-semibold">– Workmanship</p>
+                        <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)] font-semibold">– Friendly</p>
                     </div>
-                    <div className="">
-                        <p className="text-[30px] text-[#1F1A38] font-bold py-[0px] mb-4 ">Our Products</p>
-                        <p className="text-[16px] text-[rgba(0,0,0,0.8)] mb-2 font-">Sliding Windows</p>
-                        <p className="text-[16px] text-[rgba(0,0,0,0.8)] mb-2 font-">Casement Windows</p>
-                        <p className="text-[16px] text-[rgba(0,0,0,0.8)] mb-2 font-">Projected Windows</p>
-                        <p className="text-[16px] text-[rgba(0,0,0,0.8)] mb-2 font-">Sliding Doors</p>
-                        <p className="text-[16px] text-[rgba(0,0,0,0.8)] mb-2 font-">Hinge Doors</p>
-                        <p className="text-[16px] text-[rgba(0,0,0,0.8)] mb-2 font-">Swing Doors</p>
-                        <p className="text-[16px] text-[rgba(0,0,0,0.8)] mb-2 font-">Frameless Doors</p>
-                        <p className="text-[16px] text-[rgba(0,0,0,0.8)] font-">Shower Cubicles</p>
+                    <div className="flex flex-col items-center md:items-start">
+                        <p className="text-[16px] md:text-[30px] text-[#1F1A38] font-bold py-[0px] mb-2 md:mb-4 ">Our Products</p>
+                        <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)] mb-2 font-">Sliding Windows</p>
+                        <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)] mb-2 font-">Casement Windows</p>
+                        <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)] mb-2 font-">Projected Windows</p>
+                        <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)] mb-2 font-">Sliding Doors</p>
+                        <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)] mb-2 font-">Hinge Doors</p>
+                        <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)] mb-2 font-">Swing Doors</p>
+                        <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)] mb-2 font-">Frameless Doors</p>
+                        <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)] font-">Shower Cubicles</p>
                     </div>
-                    <div className="">
-                        <p className="text-[30px] text-[#1F1A38] font-bold py-[0px] mb-4 ">Contact Us</p>
+                    <div className="flex flex-col items-center md:items-start">
+                        <p className="text-[16px] md:text-[30px] text-[#1F1A38] font-bold py-[0px] mb-2 md:mb-4 ">Contact Us</p>
                         <div className="flex flex-row items-center gap-3 mb-2">
-                            <House className="w-4 h-4"/>
-                            <p className="text-[16px] text-[rgba(0,0,0,0.8)]">18 Dede Tagoe CR, Santa Maria, Accra</p>
+                            <House className="w-3 h-3 md:w-4 md:h-4"/>
+                            <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)]">18 Dede Tagoe CR, Santa Maria, Accra</p>
                         </div>
                         <div className="flex flex-row items-center gap-3 mb-2">
-                            <Phone className="w-4 h-4"/>
-                            <p className="text-[16px] text-[rgba(0,0,0,0.8)]">+233 244 229 958</p>
+                            <Phone className="w-3 h-3 md:w-4 md:h-4"/>
+                            <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)]">+233 244 229 958</p>
                         </div>
                         <div className="flex flex-row items-center gap-3 mb-7">
-                            <Mail className="w-4 h-4"/>
-                            <p className="text-[16px] text-[rgba(0,0,0,0.8)]">info@dowindowsystems.com</p>
+                            <Mail className="w-3 h-3 md:w-4 md:h-4"/>
+                            <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)]">info@dowindowsystems.com</p>
                         </div>
                         <div className="flex flex-row items-center gap-5 mb-7">
                             <button onClick={() =>{}} className="social-icon-con whatsapp-con">
-                                <MessageCircle  className="social-icon w-5 h-5"/>
+                                <MessageCircle  className="social-icon w-4 h-4 md:w-5 md:h-5"/>
                             </button>
                             <button onClick={() =>{}} className="social-icon-con facebook-con">
-                                <FacebookIcon  className="social-icon w-5 h-5"/>
+                                <FacebookIcon  className="social-icon w-4 h-4 md:w-5 md:h-5"/>
                             </button>
                             <button onClick={() =>{}} className="social-icon-con instagram-con">
-                                <InstagramIcon  className="social-icon w-5 h-5"/>
+                                <InstagramIcon  className="social-icon w-4 h-4 md:w-5 md:h-5"/>
                             </button>
                             <button onClick={() =>{}} className="social-icon-con linkedin-con">
-                                <Linkedin  className="social-icon w-5 h-5"/>
+                                <Linkedin  className="social-icon w-4 h-4 md:w-5 md:h-5"/>
                             </button>
                         </div>
-                        <p className="text-[30px] text-[#1F1A38] font-bold py-[0px] mb-2 mt-6">Working Hours</p>
+                        <p className="text-[16px] md:text-[30px] text-[#1F1A38] font-bold py-[0px] mb-2 mt-6">Working Hours</p>
                         <div className="flex flex-row items-center gap-3 mb-2">
-                            <Timer className="w-4 h-4"/>
-                            <p className="text-[16px] text-[rgba(0,0,0,0.8)]">Mon - Fri: 9:00 am - 5:00 pm</p>
+                            <Timer className="w-3 h-3 md:w-4 md:h-4"/>
+                            <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)]">Mon - Fri: 9:00 am - 5:00 pm</p>
                         </div>
                         <div className="flex flex-row items-center gap-3 mb-7">
-                            <Timer className="w-4 h-4"/>
-                            <p className="text-[16px] text-[rgba(0,0,0,0.8)]">Sat: 9:00 am - 1.00 pm</p>
+                            <Timer className="w-3 h-3 md:w-4 md:h-4"/>
+                            <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)]">Sat: 9:00 am - 1.00 pm</p>
                         </div>
-                        <button className="flex justify-center items-center w-[60%] h-[50px] border-1 bg-[brown] text-white text-[16px] hover:opacity-[0.7] ">
+                        <button className="flex justify-center items-center w-[25%] h-[40px] md:w-[60%] md:h-[50px] border-1 bg-[brown] text-white text-[14px] md:text-[16px] hover:opacity-[0.7] ">
                             Call Us
                         </button>
                     </div>
                 </div>
-                <div className="flex flex-row justify-center items-center  py-3">
-                    <p className="text-[18px] mr-[5px] text-[rgba(0,0,0,0.6)]">©</p>
-                    <p className="text-[16px] text-center text-[rgba(0,0,0,0.6)]">Copyright doWindow Systems</p>
+                <div className="flex flex-row justify-center items-center  py-2">
+                    <p className="text-[16px] md:text-[18px] mr-[5px] text-[rgba(0,0,0,0.6)]">©</p>
+                    <p className="text-[12px] md:text-[16px] text-center text-[rgba(0,0,0,0.6)]">Copyright doWindow Systems</p>
                 </div>
             </footer>
         </>

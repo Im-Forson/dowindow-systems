@@ -3,24 +3,24 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 import DoWindowIcon from "../assets/image-1.jpg"
 import Image2 from "../assets/image-2.jpg"
-import Image3 from "../assets/image-3.jpg"
+import Image3 from "../assets/work-me-2.jpg"
 
 export default function Slider() {
   const slides = [
     {
       image: Image2,
       title: "Welcome to DoWindow Systems",
-      subtitle: "Quality aluminum and glass solutions",
+      subtitle: "Quality aluminium and glass solutions",
     },
     {
       image: DoWindowIcon,
-      title: "Modern Designs",
-      subtitle: "Crafted to perfection for your projects",
+      title: "Aluminium Windows & Doors",
+      subtitle: "Fabricated and installed with precision for your perfect project",
     },
     {
       image: Image3,
       title: "Built to Last",
-      subtitle: "Sleek, durable, and energy-efficient systems",
+      subtitle: "Sleek, durable, and precise",
     },
   ];
 
