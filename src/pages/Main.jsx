@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import PhoneInput from "react-phone-input-2";
 import { motion, AnimatePresence } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 import DowindowLogo from "../assets/dowindow.png"
 import SlidingProduct from "../assets/product-sliding-window.jpg";
@@ -19,7 +21,6 @@ import WorkOyarifa2 from "../assets/work-oyarifa-2.jpg";
 import WorkAdj2 from "../assets/work-adj-2.jpg";
 import WorkKasoa from "../assets/work-kasoa.jpg";
 
-import Logo from "../assets/logo.png"
 import Slider from "../components/Slider";
 
 import { Droplet, Sun, House, Phone, Mail, Timer, Locate, Linkedin, MessageCircle, FacebookIcon, InstagramIcon, Map, Navigation2 } from "lucide-react";
@@ -311,7 +312,7 @@ export default function Main() {
                 <div className="px-[20px]">
                     <div className="product-card flex flex-col md:flex-row items-center w-[100%]  border-[0px] border-[rgba(0,0,0,0.03)] rounded-[5px] px-[10px] py-[20px] mb-[30px] ">
                         <div className="md:w-[20%] h-[auto] flex md:flex-col items-center gap-2 md:items-center md:justifty-center md:gap-3 mb-5 md:mb-0 ">
-                            <img src={SlidingProduct} alt="" className="h-[60px] w-[50px] md:h-[110px] md:w-[100px]" />
+                            <img src={SlidingProduct}  alt="product-image" className="h-[60px] w-[50px] md:h-[110px] md:w-[100px]" />
                             <p className="product-title text-[16px] md:text-[17px] text-[#1E2019] font-bold ">Sliding Window & Door</p>
                         </div>
                         <div className="md:w-[70%] md:px-[50px] ">
@@ -334,7 +335,7 @@ export default function Main() {
                     </div>
                     <div className="product-card flex flex-col md:flex-row items-center w-[100%]  border-[0px] border-[rgba(0,0,0,0.03)] rounded-[5px] px-[10px] py-[20px] mb-[30px] ">
                         <div className="md:w-[20%] h-[auto] flex md:flex-col items-center gap-2 md:items-center md:justifty-center md:gap-3 mb-5 md:mb-0 ">
-                            <img src={ProjectedProduct} alt="" className="h-[60px] w-[50px] md:h-[110px] md:w-[100px]" />
+                            <img src={ProjectedProduct} alt="product-image" className="h-[60px] w-[50px] md:h-[110px] md:w-[100px]" />
                             <p className="product-title text-[16px] md:text-[17px] text-[#1E2019] font-bold ">Projected Window</p>
                         </div>
                         <div className="md:w-[70%] md:px-[50px] ">
@@ -357,7 +358,7 @@ export default function Main() {
                     </div>
                     <div className="product-card flex flex-col md:flex-row items-center w-[100%]  border-[0px] border-[rgba(0,0,0,0.03)] rounded-[5px] px-[10px] py-[20px] mb-[30px] ">
                         <div className="md:w-[20%] h-[auto] flex md:flex-col items-center gap-2 md:items-center md:justifty-center md:gap-3 mb-5 md:mb-0 ">
-                            <img src={CasementProduct} alt="" className="h-[60px] w-[50px] md:h-[110px] md:w-[100px]" />
+                            <img src={CasementProduct} alt="product-image" className="h-[60px] w-[50px] md:h-[110px] md:w-[100px]" />
                             <p className="product-title text-[16px] md:text-[17px] text-[#1E2019] font-bold ">Casement Window</p>
                         </div>
                         <div className="md:w-[70%] md:px-[50px] ">
@@ -380,7 +381,7 @@ export default function Main() {
                     </div>
                     <div className="product-card flex flex-col md:flex-row items-center w-[100%]  border-[0px] border-[rgba(0,0,0,0.03)] rounded-[5px] px-[10px] py-[20px] mb-[30px] ">
                         <div className="md:w-[20%] h-[auto] flex md:flex-col items-center gap-2 md:items-center md:justifty-center md:gap-3 mb-5 md:mb-0 ">
-                            <img src={FixedProduct} alt=""className="h-[60px] w-[50px] md:h-[110px] md:w-[100px]" />
+                            <img src={FixedProduct} alt="product-image"className="h-[60px] w-[50px] md:h-[110px] md:w-[100px]" />
                             <p className="product-title text-[16px] md:text-[17px] text-[#1E2019] font-bold ">Fixed Window</p>
                         </div>
                         <div className="md:w-[70%] md:px-[50px] ">
@@ -403,7 +404,7 @@ export default function Main() {
                     </div>
                     <div className="product-card flex flex-col md:flex-row items-center w-[100%]  border-[0px] border-[rgba(0,0,0,0.03)] rounded-[5px] px-[10px] py-[20px] ">
                         <div className="md:w-[20%] h-[auto] flex md:flex-col items-center gap-2 md:items-center md:justifty-center md:gap-3 mb-5 md:mb-0 ">
-                            <img src={ShowerProduct} alt="" className="h-[60px] w-[50px] md:h-[110px] md:w-[100px]"/>
+                            <img src={ShowerProduct} alt="product-image" className="h-[60px] w-[50px] md:h-[110px] md:w-[100px]"/>
                             <p className="product-title text-[16px] md:text-[17px] text-[#1E2019] font-bold ">Shower Cubicle</p>
                         </div>
                         <div className="md:w-[70%] md:px-[50px] ">
@@ -439,6 +440,7 @@ export default function Main() {
                                 <img
                                     src={work.image}
                                     alt={work.title}
+                                    loading="lazy"
                                     className="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-[transparent)] hover:bg-[rgba(0,0,0,0.5))] transition-opacity duration-500 flex flex-col justify-center items-center text-center text-white p-4">
