@@ -29,7 +29,7 @@ export default function Quote() {
         formData.append("phone", phone);
 
         try {
-        const response = await fetch("https://formspree.io/f/xkgqpqpy", {
+        const response = await fetch("https://formspree.io/f/xgvnrvkk", {
             method: "POST",
             body: formData,
             headers: { Accept: "application/json" },
@@ -83,7 +83,7 @@ export default function Quote() {
                             <p className="md:text-lg text-[13px] text-[#1F1A38] font-bold py-[0px] ">DoWindow<span className="text-[brown] font-bold ml-[2px] ">Systems</span></p>
                         </Link>
                     </div>
-                    <Link to={'/'} className="px-3 flex items-center justify-center text-[16px] md:text-[18px]  text-[rgba(0,0,0,0.7)] rounded-[40px]">x</Link>
+                    <Link to={'/'} className="px-3 flex items-center justify-center text-[18px] md:text-[20px]  text-[rgba(0,0,0,0.7)] rounded-[40px]">x</Link>
                 </div>
             </nav>
             <div className={`${isSent}fixed top-0 left-0 w-full h-full`}>
@@ -190,28 +190,40 @@ export default function Quote() {
                         <p className="text-[16px] md:text-[25px] text-[#1F1A38] font-bold py-[0px] mb-2 md:mb-4 ">Contact Us</p>
                         <div className="flex flex-row items-center gap-3 mb-2">
                             <House className="w-3 h-3 md:w-4 md:h-4"/>
-                            <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)]">18 Dede Tagoe CR, Santa Maria, Accra</p>
+                            <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)]">Amoanda, Winneba Road. Ghana</p>
                         </div>
                         <div className="flex flex-row items-center gap-3 mb-2">
                             <Phone className="w-3 h-3 md:w-4 md:h-4"/>
-                            <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)]">+233 244 229 958</p>
+                            <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)]">+233 204 669 479</p>
                         </div>
                         <div className="flex flex-row items-center gap-3 mb-7">
                             <Mail className="w-3 h-3 md:w-4 md:h-4"/>
                             <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)]">info@dowindowsystems.com</p>
                         </div>
                         <div className="flex flex-row items-center gap-5 mb-7">
-                            <button onClick={() =>{}} className="social-icon-con whatsapp-con">
-                                <MessageCircle  className="social-icon w-4 h-4 md:w-5 md:h-5"/>
+                            <button
+                                onClick={() => window.open("https://wa.me/233266346479", "_blank")}
+                                className="social-icon-con whatsapp-con"
+                            >
+                                <MessageCircle className="social-icon w-4 h-4 md:w-5 md:h-5" />
                             </button>
-                            <button onClick={() =>{}} className="social-icon-con facebook-con">
-                                <FacebookIcon  className="social-icon w-4 h-4 md:w-5 md:h-5"/>
+                            <button
+                                onClick={() => window.open("https://web.facebook.com/dowindowsystems", "_blank")}
+                                className="social-icon-con facebook-con"
+                            >
+                                <FacebookIcon className="social-icon w-4 h-4 md:w-5 md:h-5" />
                             </button>
-                            <button onClick={() =>{}} className="social-icon-con instagram-con">
-                                <InstagramIcon  className="social-icon w-4 h-4 md:w-5 md:h-5"/>
+                            <button
+                                onClick={() => window.open("https://www.instagram.com/dowindowsystems", "_blank")}
+                                className="social-icon-con instagram-con"
+                            >
+                                <InstagramIcon className="social-icon w-4 h-4 md:w-5 md:h-5" />
                             </button>
-                            <button onClick={() =>{}} className="social-icon-con linkedin-con">
-                                <Linkedin  className="social-icon w-4 h-4 md:w-5 md:h-5"/>
+                            <button
+                                onClick={() => window.open("https://www.linkedin.com/company/dowindowsystems", "_blank")}
+                                className="social-icon-con linkedin-con"
+                            >
+                                <Linkedin className="social-icon w-4 h-4 md:w-5 md:h-5" />
                             </button>
                         </div>
                         <p className="text-[16px] md:text-[25px] text-[#1F1A38] font-bold py-[0px] mb-2 mt-6">Working Hours</p>

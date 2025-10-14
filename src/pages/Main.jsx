@@ -115,7 +115,7 @@ export default function Main() {
         formData.append("phone", phone);
 
         try {
-        const response = await fetch("https://formspree.io/f/xkgqpqpy", {
+        const response = await fetch("https://formspree.io/f/xgvnrvkk", {
             method: "POST",
             body: formData,
             headers: { Accept: "application/json" },
@@ -295,10 +295,10 @@ export default function Main() {
                     </div>
                     <div className="md:w-[50%] md:pr-[90px] px-[50px]">
                         <p className="about-text text-[13px] md:text-[17px] font mb-[20px]">
-                            At <span className="font-bold">doWindow Systems,</span> we <span className="font-bold">fabricate,</span>, and <span className="font-bold">install</span> premium <span className="font-bold">aluminium</span> and <span className="font-bold">glass solutions</span> that redefine modern living and working spaces. Based in <span className="font-bold">Ghana</span>, we are committed to delivering innovative, durable, and aesthetically pleasing <span className="font-bold">window and door systems</span> that meet both residential and commercial needs.
+                            At <span className="font-bold">doWindow Systems,</span> we <span className="font-bold">fabricate</span> and <span className="font-bold">install</span> premium <span className="font-bold">aluminium</span> and <span className="font-bold">glass solutions</span> that redefine modern living and working spaces. Based in <span className="font-bold">Ghana</span>, we are committed to delivering innovative, durable, and aesthetically pleasing <span className="font-bold">window and door systems</span> that meet both residential and commercial needs.
                         </p>
                         <p className="about-text text-[13px] md:text-[17px] font mb-[20px]">
-                            We specialize in a wide range of products, including <span className="font-bold">sliding windows and doors, projected windows, casement windows, fixed windows, aluminium hinge doors, swing doors, frameless glass doors,</span> and sleek <span className="font-bold">shower cubicles</span>. Every product we create is tailored to ensure optimal performance, <span className="font-bold">long-lasting strength,</span> and elegant design — all while maintaining affordability and precision.
+                            We specialize in a wide range of products, including <span className="font-bold">sliding windows and doors, projected windows, casement windows, fixed windows, hinge doors, swing doors, frameless glass doors,</span> and sleek <span className="font-bold">shower cubicles</span>. Every product we create is tailored to ensure optimal performance, <span className="font-bold">long-lasting strength,</span> and elegant design — all while maintaining affordability and precision.
                         </p>
                         <p className="about-text text-[13px] md:text-[17px] font">
                             We are a <span className="font-bold">young and passionate team,</span> driven by innovation and a commitment to excellence. Each installation is handled with care and attention to detail, ensuring that <span className="font-bold">our clients receive products that last, perform, and inspire confidence.</span>
@@ -504,22 +504,53 @@ export default function Main() {
                             </div>
                         </form>
                     </div>
-                    <div className="md:w-[35%] w-full px-[50px] md:pr-[70px] flex flex-col gap-6">
-                        <h1 className="md:text-3xl text-lg">Need more information on details? Call Us <span className="text-[brown]"><a href="tel:+233244229958">+233 244 229 958</a></span></h1>
-                        <div className="">
-                            <div className="flex flex-row items-center gap-3 mb-2 ">
-                                <House className="w-3 h-3 md:w-4 md:h-4"/>
-                                <p className="text-[13px] md:text-[16px]">Amoanda, Central Region, Ghana</p>
+                    <div className="md:w-[35%] w-full px-[50px] md:pr-[70px] flex flex-col gap-10">
+                        <h1 className="md:text-3xl text-lg">Need more information on details? Call Us <span className="text-[brown]"><a href="tel:+233204669479">+233 204 669 479</a></span></h1>
+                        <div className="flex flex-col gap-5">
+                            <div className="">
+                                <div className="flex flex-row items-center gap-3 mb-3 ">
+                                    <House className="w-3 h-3 md:w-4 md:h-4"/>
+                                    <p className="text-[13px] md:text-[16px]">Amoanda, Winneba Road. Ghana</p>
+                                </div>
+                                <div className="flex flex-row items-center gap-3 mb-3 ">
+                                    <Navigation2 className="w-3 h-3 md:w-4 md:h-4"/>
+                                    <p className="text-[13px] md:text-[16px]">GC-017-7312</p>
+                                </div>
+                                <div className="flex flex-row items-center gap-3">
+                                    <Mail className="w-3 h-3 md:w-4 md:h-4"/>
+                                    <p className="text-[13px] md:text-[16px]">info@dowindowsystems.com</p>
+                                </div>
                             </div>
-                            <div className="flex flex-row items-center gap-3 mb-2 ">
-                                <Navigation2 className="w-3 h-3 md:w-4 md:h-4"/>
-                                <p className="text-[13px] md:text-[16px]">GC-017-7312</p>
-                            </div>
-                            <div className="flex flex-row items-center gap-3">
-                                <Mail className="w-3 h-3 md:w-4 md:h-4"/>
-                                <p className="text-[13px] md:text-[16px]">info@dowindowsystems.com</p>
+
+                            <div className="flex flex-row items-center gap-5">
+                                <button
+                                    onClick={() => window.open("https://wa.me/233204669479", "_blank")}
+                                    className="social-icon-con whatsapp-con"
+                                >
+                                    <MessageCircle className="social-icon w-4 h-4 md:w-5 md:h-5" />
+                                </button>
+                                <button
+                                    onClick={() => window.open("https://web.facebook.com/dowindowsystems", "_blank")}
+                                    className="social-icon-con facebook-con"
+                                >
+                                    <FacebookIcon className="social-icon w-4 h-4 md:w-5 md:h-5" />
+                                </button>
+                                <button
+                                    onClick={() => window.open("https://www.instagram.com/dowindowsystems/", "_blank")}
+                                    className="social-icon-con instagram-con"
+                                >
+                                    <InstagramIcon className="social-icon w-4 h-4 md:w-5 md:h-5" />
+                                </button>
+                                <button
+                                    onClick={() => window.open("https://www.linkedin.com/company/dowindowsystems", "_blank")}
+                                    className="social-icon-con linkedin-con"
+                                >
+                                    <Linkedin className="social-icon w-4 h-4 md:w-5 md:h-5" />
+                                </button>
                             </div>
                         </div>
+                        
+
                         <p className="md:text-[16px] text-[13px] italic">
                             Our team is <span className="text-[brown] font-semibold">always ready</span> to guide you through the 
                             <span className="text-[brown] font-semibold"> best window and door solutions</span> perfectly tailored for 
@@ -556,28 +587,40 @@ export default function Main() {
                         <p className="text-[16px] md:text-[25px] text-[#1F1A38] font-bold py-[0px] mb-2 md:mb-4 ">Contact Us</p>
                         <div className="flex flex-row items-center gap-3 mb-2">
                             <House className="w-3 h-3 md:w-4 md:h-4"/>
-                            <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)]">18 Dede Tagoe CR, Santa Maria, Accra</p>
+                            <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)]">Amoanda, Winneba Road. Ghana</p>
                         </div>
                         <div className="flex flex-row items-center gap-3 mb-2">
                             <Phone className="w-3 h-3 md:w-4 md:h-4"/>
-                            <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)]">+233 244 229 958</p>
+                            <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)]">+233 204 669 479</p>
                         </div>
                         <div className="flex flex-row items-center gap-3 mb-7">
                             <Mail className="w-3 h-3 md:w-4 md:h-4"/>
                             <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)]">info@dowindowsystems.com</p>
                         </div>
                         <div className="flex flex-row items-center gap-5 mb-7">
-                            <button onClick={() =>{}} className="social-icon-con whatsapp-con">
-                                <MessageCircle  className="social-icon w-4 h-4 md:w-5 md:h-5"/>
+                            <button
+                                onClick={() => window.open("https://wa.me/233266346479", "_blank")}
+                                className="social-icon-con whatsapp-con"
+                            >
+                                <MessageCircle className="social-icon w-4 h-4 md:w-5 md:h-5" />
                             </button>
-                            <button onClick={() =>{}} className="social-icon-con facebook-con">
-                                <FacebookIcon  className="social-icon w-4 h-4 md:w-5 md:h-5"/>
+                            <button
+                                onClick={() => window.open("https://web.facebook.com/dowindowsystems", "_blank")}
+                                className="social-icon-con facebook-con"
+                            >
+                                <FacebookIcon className="social-icon w-4 h-4 md:w-5 md:h-5" />
                             </button>
-                            <button onClick={() =>{}} className="social-icon-con instagram-con">
-                                <InstagramIcon  className="social-icon w-4 h-4 md:w-5 md:h-5"/>
+                            <button
+                                onClick={() => window.open("https://www.instagram.com/dowindowsystems/", "_blank")}
+                                className="social-icon-con instagram-con"
+                            >
+                                <InstagramIcon className="social-icon w-4 h-4 md:w-5 md:h-5" />
                             </button>
-                            <button onClick={() =>{}} className="social-icon-con linkedin-con">
-                                <Linkedin  className="social-icon w-4 h-4 md:w-5 md:h-5"/>
+                            <button
+                                onClick={() => window.open("https://www.linkedin.com/company/dowindowsystems", "_blank")}
+                                className="social-icon-con linkedin-con"
+                            >
+                                <Linkedin className="social-icon w-4 h-4 md:w-5 md:h-5" />
                             </button>
                         </div>
                         <p className="text-[16px] md:text-[25px] text-[#1F1A38] font-bold py-[0px] mb-2 mt-6">Working Hours</p>
