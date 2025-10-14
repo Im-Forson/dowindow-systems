@@ -149,7 +149,7 @@ export default function Main() {
             setTimeout(() => {
                 setSent('hidden');
                 navigate('/')
-            }, 5000);
+            }, 7000);
         }
     }, [status])
 
@@ -164,7 +164,7 @@ export default function Main() {
             }
             });
         },
-        { threshold: 0.6 } // section is considered active when 60% visible
+        { threshold: 0.4 } // section is considered active when 60% visible
         );
 
         sections.forEach((section) => observer.observe(section));
@@ -227,7 +227,7 @@ export default function Main() {
                     </div>
                     <Link
                     to="/quote"
-                    className="fadePulse px-3 py-2 md:py-3 rounded-[2px] text-white text-[12px] font-bold md:text-[16px] hover:opacity-80"
+                    className="fadePulse px-3 py-3 rounded-[2px] text-white text-[12px] font-bold md:text-[16px] hover:opacity-80  transition-all duration-100 active:scale-95 active:opacity-[1]"
                     >
                     Get a Quote
                     </Link>
@@ -498,7 +498,7 @@ export default function Main() {
                                 />
                             </div>
                             <div className="flex md:w-[65%] w-full justify-end mb-[20px] ">
-                                <button type="submit" disabled={status === "sending"} className="w-[50%] h-[50px] md:h-[60px] flex items-center justify-center bg-[#2D3047] text-white text-[14px] md:text-[16px] font-bold rounded-[2px] hover:opacity-[0.7]">{status === "sending" ? "Sending..." : "Send Message"}</button>
+                                <button type="submit" disabled={status === "sending"} className="w-[50%] h-[50px] md:h-[60px] flex items-center justify-center bg-[#2D3047] text-white text-[14px] md:text-[16px] font-bold rounded-[2px] hover:opacity-[0.7] transition-all duration-100 active:scale-95 active:opacity-[1]">{status === "sending" ? "Sending..." : "Send Message"}</button>
                             </div>
                         </form>
                     </div>
@@ -587,7 +587,7 @@ export default function Main() {
                             <Timer className="w-3 h-3 md:w-4 md:h-4"/>
                             <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)]">Sat: 9:00 am - 1.00 pm</p>
                         </div>
-                        <a href="tel:+233244229958" className="flex justify-center items-center w-[35%] h-[40px] md:w-[60%] md:h-[50px] border-1 bg-[brown] text-white text-[14px] md:text-[16px] font-bold hover:opacity-[0.7] ">
+                        <a href="tel:+233244229958" className="flex justify-center items-center w-[35%] h-[40px] md:w-[60%] md:h-[50px] border-1 bg-[brown] text-white text-[14px] md:text-[16px] font-bold hover:opacity-[0.7] transition-all duration-100 active:scale-95 active:opacity-[1] ">
                             Call Us
                         </a>
                     </div>

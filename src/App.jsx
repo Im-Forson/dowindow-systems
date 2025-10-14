@@ -8,10 +8,12 @@ import './App.css'
 import './pages/home'
 import Main from './pages/Main'
 import Quote from './pages/Quote'
+import NotFound from './pages/NotFound'
 
 const appRouter = createBrowserRouter([
   { path: '/', element: <Main/>},
-  { path: '/quote', element: <Quote/>}
+  { path: '/quote', element: <Quote/>},
+  { path: '*', element: <NotFound/>},
 ]);
 
 

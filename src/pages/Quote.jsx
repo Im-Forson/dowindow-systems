@@ -150,7 +150,7 @@ export default function Quote() {
                 <button
                     type="submit"
                     disabled={status === "sending"}
-                    className="w-[50%] h-[50px] md:h-[60px] flex items-center justify-center bg-[#2D3047] font-bold text-white text-[14px] md:text-[16px] rounded-[2px] hover:opacity-[0.7] transition-all"
+                    className="w-[50%] h-[50px] md:h-[60px] flex items-center justify-center bg-[#2D3047] font-bold text-white text-[14px] md:text-[16px] rounded-[2px] hover:opacity-[0.7] transition-all duration-100 active:scale-95 active:opacity-[1]"
                 >
                     {status === "sending" ? "Sending..." : "Request Quote"}
                 </button>
@@ -218,7 +218,7 @@ export default function Quote() {
                             <Timer className="w-3 h-3 md:w-4 md:h-4"/>
                             <p className="text-[13px] md:text-[16px] text-[rgba(0,0,0,0.8)]">Sat: 9:00 am - 1.00 pm</p>
                         </div>
-                        <a href="tel:+233244229958" className="flex justify-center items-center w-[35%] h-[40px] md:w-[60%] md:h-[50px] border-1 bg-[brown] text-white text-[14px] font-bold md:text-[16px] hover:opacity-[0.7] ">
+                        <a href="tel:+233244229958" className="flex justify-center items-center w-[35%] h-[40px] md:w-[60%] md:h-[50px] border-1 bg-[brown] text-white text-[14px] font-bold md:text-[16px] hover:opacity-[0.7] transition-all duration-100 active:scale-95 active:opacity-[1]">
                             Call Us
                         </a>
                     </div>
