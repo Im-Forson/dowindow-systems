@@ -16,6 +16,11 @@ export default function Quote() {
     const [toastMsg2, setToastMsg2] = useState('You will hear from us soon.');
     const navigate = useNavigate();
 
+    useEffect(() => {
+        document.title = "Quote | DoWindow Systems";
+    }, []);
+
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         setStatus("sending");
