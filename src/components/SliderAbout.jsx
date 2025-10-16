@@ -21,7 +21,7 @@ export default function SliderAbout() {
     <div className="w-full flex justify-center items-center pt-8 md:py-16 bg-white">
       <h2
         key={index}
-        className="about-slide-text md:h-[140px] h-[100px] text-shadow-sm text-lg md:text-4xl text-center text-[brown] font-semibold transition-all duration-700 ease-in-out animate-fadeIn"
+        className="about-slide-text md:h-[140px] h-[100px] text-shadow-xs text-lg md:text-4xl text-center text-[brown] font-semibold transition-all duration-700 ease-in-out animate-fadeIn"
       >
         {messages[index]}
       </h2>

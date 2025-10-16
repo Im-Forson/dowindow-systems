@@ -505,7 +505,7 @@ export default function Main() {
                         </form>
                     </div>
                     <div className="md:w-[35%] w-full px-[50px] md:pr-[70px] flex flex-col gap-10">
-                        <h1 className="md:text-3xl text-lg">Need more information on details? Call Us <span className="text-[brown]"><a href="tel:+233204669479">+233 204 669 479</a></span></h1>
+                        <h1 className="md:text-3xl text-lg">Need to know more on details? Call Us <span className="text-[brown]"><a href="tel:+233204669479">+233 204 669 479</a></span></h1>
                         <div className="flex flex-col gap-5">
                             <div className="">
                                 <div className="flex flex-row items-center gap-3 mb-3 ">
