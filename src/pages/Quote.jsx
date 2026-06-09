@@ -3,6 +3,7 @@ import { Droplet, Sun, House, Phone, Mail, Timer, Locate, Linkedin, MessageCircl
 import PhoneInput from "react-phone-input-2";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 
 
 import DowindowLogo from "../assets/dowindow.png"
@@ -75,6 +76,17 @@ export default function Quote() {
 
     return (
         <>
+            <Helmet>
+                <title>Get Qoute | Aluminium & Glass Windows and Doors</title>
+                <meta
+                name="description"
+                content="Buy high-quality aluminium sliding windows and doors in Accra. Durable, affordable and modern designs."
+                />
+                <meta
+                name="keywords"
+                content="aluminium windows Ghana, sliding windows Accra, aluminium doors"
+                />
+            </Helmet>
             <nav className={`fixed top-0 left-0 w-full bg-white shadow  px-[30px] pt-[10px] pb-[15px]`}>
                 <div className="flex justify-between items-center">
                     <div className="flex flex-col items-center">

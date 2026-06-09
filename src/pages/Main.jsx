@@ -4,6 +4,7 @@ import PhoneInput from "react-phone-input-2";
 import { motion, AnimatePresence } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { Helmet } from "react-helmet-async";
 
 import DowindowLogo from "../assets/dowindow.png"
 import SlidingProduct from "../assets/product-sliding-window.jpg";
@@ -54,12 +55,12 @@ const works = [
     description: "Energy-efficient aluminium casement windows.",
     image: WorkPramPram,
   },
-  {
-    id: 4,
-    title: "Spintex - Ghana",
-    description: "Energy-efficient aluminium casement windows.",
-    image: WorkSpintex,
-  },
+//   {
+//     id: 4,
+//     title: "Spintex - Ghana",
+//     description: "Energy-efficient aluminium casement windows.",
+//     image: WorkSpintex,
+//   },
   {
     id: 5,
     title: "North Legon - Ghana",
@@ -186,6 +187,17 @@ export default function Main() {
 
     return (
         <>
+        <Helmet>
+            <title>Aluminium & Glass Windows and Doors</title>
+            <meta
+            name="description"
+            content="Buy high-quality aluminium sliding windows and doors in Accra. Durable, affordable and modern designs."
+            />
+            <meta
+            name="keywords"
+            content="aluminium windows Ghana, sliding windows Accra, aluminium doors"
+            />
+        </Helmet>
             <nav className={`fixed top-0 left-0 w-full bg-white shadow z-50  px-[30px] pt-[10px] pb-[15px]`}>
                 <div className="flex justify-between items-center">
                     <div className="flex flex-col items-center">
