@@ -522,7 +522,7 @@ export default function Main() {
                             <div className="">
                                 <div className="flex flex-row items-center gap-3 mb-3 ">
                                     <House className="w-3 h-3 md:w-4 md:h-4"/>
-                                    <p className="text-[13px] md:text-[16px]">Amoanda, Winneba Road. Ghana</p>
+                                    <p className="text-[13px] md:text-[16px]">Sowutuom, Accra. Ghana</p>
                                 </div>
                                 <div className="flex flex-row items-center gap-3 mb-3 ">
                                     <Navigation2 className="w-3 h-3 md:w-4 md:h-4"/>
